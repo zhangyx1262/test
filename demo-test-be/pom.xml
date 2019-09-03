@@ -11,9 +11,9 @@
     <modules>
         <module>iuap-bootstrap</module>
         <module>iuap-common-app</module>
-        <module>iuap-table1-api</module>
-        <module>iuap-table1-app</module>
-        <module>iuap-table1-domain</module>
+        <module>iuap-table2-api</module>
+        <module>iuap-table2-app</module>
+        <module>iuap-table2-domain</module>
     </modules>
 
     <packaging>pom</packaging>
