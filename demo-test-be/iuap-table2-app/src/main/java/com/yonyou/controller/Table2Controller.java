@@ -25,7 +25,7 @@ import java.util.ArrayList;
 /**
 * 说明：表2基础Controller——提供数据增(CREATE)、删(DELETE、改(UPDATE)、查(READ)等rest接口
 * @author  
-* @date 2019-9-7 23:02:13
+* @date 2019-9-7 23:16:03
 */
 @RestController("com.yonyou.controller.Table2Controller")
 @RequestMapping(value = "/function2/table2")
