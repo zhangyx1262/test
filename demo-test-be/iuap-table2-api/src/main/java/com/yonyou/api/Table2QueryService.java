@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * RPC 调用接口声明
  * @author  
- * @date 2019-9-3 22:06:23
+ * @date 2019-9-7 23:02:13
  */
 @RemoteCall("iuap-demo-test-server")
 public interface Table2QueryService {

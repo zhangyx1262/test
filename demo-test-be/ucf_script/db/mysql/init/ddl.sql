@@ -6,6 +6,7 @@ CREATE TABLE `table2` (
     `table2_no` VARCHAR(64) DEFAULT NULL COMMENT '表编号2',
     `table1_no` VARCHAR(64) DEFAULT NULL COMMENT '表编号1',
     `table2_name` VARCHAR(64) DEFAULT NULL COMMENT '属性名',
+    `stute` VARCHAR(64) DEFAULT NULL COMMENT '状态',
         `TENANT_ID` varchar(64) DEFAULT NULL,
         `DR` int(11) DEFAULT NULL COMMENT '是否删除',
         `TS` varchar(64) DEFAULT NULL COMMENT '时间戳',

@@ -6,6 +6,7 @@ ID VARCHAR2(64) not null,
         table2_no VARCHAR2(64) null,
         table1_no VARCHAR2(64) null,
         table2_name VARCHAR2(64) null,
+        stute VARCHAR2(64) null,
         TENANT_ID VARCHAR2(64) NULL,
         DR NUMBER(11) NULL,
         TS VARCHAR2(64) NULL,
@@ -17,6 +18,7 @@ ID VARCHAR2(64) not null,
         comment on column table2.table2_no is '表编号2';
         comment on column table2.table1_no is '表编号1';
         comment on column table2.table2_name is '属性名';
+        comment on column table2.stute is '状态';
 comment on column table2.DR is '是否删除';
 comment on column table2.TS is '时间戳';
 comment on column table2.LAST_MODIFIED is '修改时间';

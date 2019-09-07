@@ -18,7 +18,7 @@ import java.util.*;
  /**
   * 用于构造查询条件
   * @since v5.0.0
-  * @date 2019-9-3 22:06:23
+  * @date 2019-9-7 23:02:13
   */
 public class SimpleSearchDTO {
     private static Logger logger = LoggerFactory.getLogger(SimpleSearchDTO.class);
@@ -49,6 +49,7 @@ public class SimpleSearchDTO {
         public String getSearch_table2_name(){
             return this.search_table2_name;
         }
+
 
 
         private String search_table2_no;     //外键

@@ -230,6 +230,15 @@ export default class IndexView extends Component {
             key: "table2_name",
             width: 150,
         },
+        {
+            title: "状态",
+            dataIndex: "stuteEnumValue",
+            key: "stuteEnumValue",
+            width: 150,
+                render(text,record,index){
+                    return record['stuteEnumValue'];
+                }
+        },
     ];
 
     /**

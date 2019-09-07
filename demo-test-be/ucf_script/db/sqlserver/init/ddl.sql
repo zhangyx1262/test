@@ -12,6 +12,7 @@ CREATE TABLE [table2] (
 [table2_no] VARCHAR(64)   NULL ,
 [table1_no] VARCHAR(64)   NULL ,
 [table2_name] VARCHAR(64)   NULL ,
+[stute] VARCHAR(64)   NULL ,
    PRIMARY KEY ([ID])
 )
 ON [PRIMARY]
@@ -22,6 +23,8 @@ GO
 EXEC sp_addextendedproperty 'MS_Description',N'表编号1','user','dbo','TABLE','table2','COLUMN','table1_no'
 GO
 EXEC sp_addextendedproperty 'MS_Description',N'属性名','user','dbo','TABLE','table2','COLUMN','table2_name'
+GO
+EXEC sp_addextendedproperty 'MS_Description',N'状态','user','dbo','TABLE','table2','COLUMN','stute'
 GO
 
 
