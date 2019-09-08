@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * RPC provider端
  * @author  
- * @date 2019-9-7 23:18:48
+ * @date 2019-9-8 21:57:12
  */
 @Service("com.yonyou.impl.Table2QueryServiceImpl")
 public class Table2QueryServiceImpl implements Table2QueryService {

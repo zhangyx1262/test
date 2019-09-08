@@ -17,7 +17,7 @@ import java.util.Random;
 /**
  * 表2
  * @since v5.0.0
- * @date 2019-9-7 23:18:48
+ * @date 2019-9-8 21:57:12
  */
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -115,7 +115,7 @@ public class Table2 extends BasePO implements AuditTrail{
     }
 
 
-    @Condition
+    @Condition(match=Match.EQ)
     @Column(name="stute")
     @I18nEnumCode(clazz = Table2Constant.StuteEnum.class,target ="stuteEnumValue" )
     private String stute;        //状态

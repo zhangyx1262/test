@@ -25,7 +25,7 @@ import java.util.ArrayList;
 /**
 * 说明：表2基础Controller——提供数据增(CREATE)、删(DELETE、改(UPDATE)、查(READ)等rest接口
 * @author  
-* @date 2019-9-7 23:18:48
+* @date 2019-9-8 21:57:13
 */
 @RestController("com.yonyou.controller.Table2Controller")
 @RequestMapping(value = "/function2/table2")
@@ -49,11 +49,13 @@ public class Table2Controller extends BaseController{
             ,@RequestParam(required = false) String search_table2_no
             ,@RequestParam(required = false) String search_table1_no
             ,@RequestParam(required = false) String search_table2_name
+            ,@RequestParam(required = false) String search_stute
     ) {
         SimpleSearchDTO searchDTO = new SimpleSearchDTO();
             searchDTO.setSearch_table2_no(search_table2_no);
             searchDTO.setSearch_table1_no(search_table1_no);
             searchDTO.setSearch_table2_name(search_table2_name);
+            searchDTO.setSearch_stute(search_stute);
         PageRequest pageRequest;
         Sort sort= SearchUtil.getSortFromSortMap(searchDTO.getSorts(),Table2.class);
         try {

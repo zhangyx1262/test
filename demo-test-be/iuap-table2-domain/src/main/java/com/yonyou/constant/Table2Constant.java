@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * 表2枚举定义,约定为po的fieldName_key为匹配原则
  * @since v5.0.0
- * @date 2019-9-7 23:18:48
+ * @date 2019-9-8 21:57:12
  */
 public class Table2Constant   {
                 public enum StuteEnum implements I18nEnum {

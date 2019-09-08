@@ -142,6 +142,34 @@ if(typeof rowData !== 'undefined'){
             )}
         />
                               </FormItem>
+                              <FormItem>
+        <Label >
+            状态
+        </Label>
+        <Select disabled={typeof btnFlag != 'undefined' && btnFlag == 2
+}
+            {
+            ...getFieldProps('stute', {
+                initialValue: (typeof rowData === 'undefined' || typeof rowData.stute === 'undefined') ? "" : String(rowData.stute)
+,
+                rules: [{
+                    required: false, message: '请选择状态',
+                }],
+                onChange(value) {
+if(typeof rowData !== 'undefined'){
+    let tempRow = Object.assign({},rowData,{ stute: value });
+    _this.setState({
+        rowData:tempRow
+    })
+}
+                }
+            }
+            )}>
+            <Option value="">请选择</Option>
+                <Option value={ '0' }>待申请</Option>
+                <Option value={ '1' }>已申请</Option>
+        </Select>
+                              </FormItem>
                 </FormList>
             </SearchPanel>
         )
